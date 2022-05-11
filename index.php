@@ -21,7 +21,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 <body>
 <a href='login/reg.php' target="blank"><div class="login">registreer/login</div></a>
 <a href='spel/index.html' target="blank"><div class="Spel">raad het getal</div></a>
-<a href='shop/index.html' target="blank"><div class="Winkel">winkel</div></a>
+<a href='shop/index.php' target="blank"><div class="Winkel">winkel</div></a>
 <a href='lote/index.html' target="blank"><div class="Loterij">loterij</div></a>
 <div class="punten">punten:</div>
     <p>
