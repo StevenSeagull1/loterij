@@ -25,7 +25,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 <a href='lote/index.html' target="blank"><div class="Loterij">loterij</div></a>
 <div class="punten">punten:</div>
     <p>
-        <a href="login/logout.php" class="btn btn-danger ml-3">Sign Out of Your Account</a>
+        <a href="login/logout.php" class="btn btn-danger ml-3">log out</a>
     </p>
 </body>
 </html>
