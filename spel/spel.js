@@ -13,7 +13,7 @@
                + guess + " pogingen dat moet wel echt beter ");
        points+=1;
        console.log(points)
-       document.getElementById("points").innerHTML = points;
+       document.getElementById("points").innerHTML = points
 
    }
    else if(x > y)
