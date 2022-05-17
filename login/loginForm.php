@@ -11,7 +11,7 @@
   <label for="fname">Username:</label><br>
   <input type="text" id="fname" name="fname"><br>
   <label for="lname">Password:</label><br>
-  <input type="text" id="lname" name="lname">
-        
+  <input type="text" id="lname" name="lname"> 
+  <input type="submit" value="Submit">
 </body>
 </html>
