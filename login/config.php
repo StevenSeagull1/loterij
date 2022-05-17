@@ -19,7 +19,7 @@ $options = [                                         // Options voor o.a. error 
 try {                                               // Een try/catch waarin je een nieuwe PDO instance aanmaakt, en errorhandeling afwerkt.
     $pdo = new PDO($dsn, $user, $pass, $options);
     
-} 
+}
 
 catch (\PDOException $e) {
      throw new \PDOException($e->getMessage(), (int)$e->getCode());
