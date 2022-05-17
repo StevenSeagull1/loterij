@@ -1,0 +1,20 @@
+body {
+    font-family: verdana;
+}
+
+.username {
+    padding: 15px;
+}
+
+.password {
+    padding: 15px;
+}
+
+input{
+    width: 200px;
+    height: 25px;
+}
+
+.submit {
+    padding: 15px;
+}
