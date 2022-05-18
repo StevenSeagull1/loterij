@@ -7,6 +7,7 @@ const guessSubmit = document.querySelector('.guessSubmit');
 const guessField = document.querySelector('.guessField');
 let guessCount = 1;
 let resetButton;
+let image = document.getElementById('ron');
 function checkGuess() {
     const userGuess = Number(guessField.value);
     if (guessCount === 1) {
@@ -20,19 +21,22 @@ function checkGuess() {
         lastResult.style.backgroundColor = 'green';
         lowOrHi.textContent = '';
         points+=1
-        document.getElementById('myImage')
-            .src="ronblij.png";
+        image.src = "ronblij.png";
         setGameOver();
     } else if (guessCount === 10) {
         lastResult.textContent = '!!!GAME OVER!!!';
         lowOrHi.textContent = '';
+        image.src = "ronnetje.png";
         setGameOver();
     } else {
         lastResult.textContent = 'Wrong!';
+        image.src = "ronnetje.png";
         lastResult.style.backgroundColor = 'red';
         if(userGuess < randomNumber) {
+            image.src = "ronnetje.png";
             lowOrHi.textContent = 'Last guess was too low!' ;
         } else if(userGuess > randomNumber) {
+            image.src = "ronnetje.png";
             lowOrHi.textContent = 'Last guess was too high!';
         }
     }
@@ -58,6 +62,7 @@ function resetGame() {
     const resetParas = document.querySelectorAll('.resultParas p');
     for (const resetPara of resetParas) {
         resetPara.textContent = '';
+        image.src = "ronnetje.png";
     }
 
     resetButton.parentNode.removeChild(resetButton);
