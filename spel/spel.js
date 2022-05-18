@@ -17,7 +17,7 @@ function checkGuess() {
     guesses.textContent += userGuess + ' ';
 
     if (userGuess === randomNumber) {
-        lastResult.textContent = 'Congratulations! You got it right!';
+        lastResult.textContent = 'Geweldig! ik ben trots op je.';
         lastResult.style.backgroundColor = 'green';
         lowOrHi.textContent = '';
         points+=1
@@ -26,7 +26,7 @@ function checkGuess() {
         image.src = "ronblij.png";
         setGameOver();
     } else if (guessCount === 10) {
-        lastResult.textContent = '!!!GAME OVER!!!';
+        lastResult.textContent = 'wat ben jij waardeloos';
         lowOrHi.textContent = '';
         image.src = "ronnetje.png";
         setGameOver();
