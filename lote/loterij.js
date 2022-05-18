@@ -1,7 +1,12 @@
 setInterval( function() {
- 
+    let currentDate = new Date()
+    let day = currentDate.getDate() + 1; 
+    let month = currentDate.getMonth() + 1;
     // First, set the time and date you want to countdown to
-    let countingDownTo = new Date("may 25, 2022 00:00:00");
+    let e = new Date();
+    thisYear = e.getFullYear(); // Get this year
+    let countingDownTo = new Date(`${month} ${day} ${thisYear} 00:00:00`);
+    console.log('countingdownto => ',countingDownTo);
 
     // Get today's time and date
     let now = new Date();
