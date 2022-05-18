@@ -1,4 +1,5 @@
-let randomNumber = Math.floor(Math.random() * 4 ) + 1;
+let points = 0;
+let randomNumber = Math.floor(Math.random() * 4) + 1;
 const guesses = document.querySelector('.guesses');
 const lastResult = document.querySelector('.lastResult');
 const lowOrHi = document.querySelector('.lowOrHi');
@@ -6,7 +7,6 @@ const guessSubmit = document.querySelector('.guessSubmit');
 const guessField = document.querySelector('.guessField');
 let guessCount = 1;
 let resetButton;
-
 function checkGuess() {
     const userGuess = Number(guessField.value);
     if (guessCount === 1) {
@@ -19,6 +19,7 @@ function checkGuess() {
         lastResult.textContent = 'Congratulations! You got it right!';
         lastResult.style.backgroundColor = 'green';
         lowOrHi.textContent = '';
+        points+=1
         setGameOver();
     } else if (guessCount === 10) {
         lastResult.textContent = '!!!GAME OVER!!!';
@@ -65,3 +66,5 @@ function resetGame() {
     lastResult.style.backgroundColor = 'white';
     randomNumber = Math.floor(Math.random() * 4) + 1;
 }
+
+console.log(points)

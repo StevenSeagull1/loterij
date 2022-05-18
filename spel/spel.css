@@ -13,3 +13,7 @@ body {
     color: white;
     padding: 3px;
 }
+img{
+    margin-top: -100px;
+    margin-left: -400px;
+}
