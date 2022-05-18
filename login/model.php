@@ -7,7 +7,7 @@ function inlogAction(){
     $name = filter_input(INPUT_POST,'name');//$_POST['name'];
     $password = filter_input(INPUT_POST,'password');//$_POST['password'];
     $hashed_password = hash('sha256',$password);
-    $sql = 'SELECT username, password,role FROM users
+    $sql = 'SELECT username, password,role FROM user
     WHERE username = :name';
     $statement = $pdo->prepare($sql);
     $statement->bindParam(':name',$name);
