@@ -15,7 +15,7 @@
     	<label>Password:</label><br>
     	<input type="password" name="password" class="password"><br>
 
-    	<input type="submit" name="btn" class="btn">
+    	<input type="submit" name="sumbit" class="submit">
 </form>
 </div>
 </body>
