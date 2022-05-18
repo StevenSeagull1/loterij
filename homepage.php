@@ -9,7 +9,7 @@
     <title>Loterij</title>
 </head>
 <body>
-<a href='login/login.php' target="blank"><div class="login">registreer/login</div></a>
+<a href='login/inlogForm.php' target="blank"><div class="login">registreer/login</div></a>
 <a href='spel/index.html' target="blank"><div class="Spel">raad het getal</div></a>
 <a href='shop/index.php' target="blank"><div class="Winkel">winkel</div></a>
 <a href='lote/index.html' target="blank"><div class="Loterij">loterij</div></a>
