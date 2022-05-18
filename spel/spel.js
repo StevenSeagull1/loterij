@@ -21,6 +21,8 @@ function checkGuess() {
         lastResult.style.backgroundColor = 'green';
         lowOrHi.textContent = '';
         points+=1
+        console.log(points)
+        document.getElementById("punt").innerHTML = points;
         image.src = "ronblij.png";
         setGameOver();
     } else if (guessCount === 10) {
@@ -74,4 +76,3 @@ function resetGame() {
     randomNumber = Math.floor(Math.random() * 4) + 1;
 }
 
-console.log(points)
