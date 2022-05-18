@@ -2,7 +2,7 @@
 function inlogAction(){
 if(isset($_POST['name']))
 {
-require 'secure/config.php';
+require 'login/config.php';
 $name = filter_input(INPUT_POST,'name');//$_POST['name'];
 $password = filter_input(INPUT_POST,'password');//$_POST['password'];
 $hashed_password = hash('sha256',$password);
