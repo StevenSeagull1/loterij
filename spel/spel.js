@@ -1,31 +1,67 @@
- var y = Math.floor(Math.random() * 4 + 1);
-    var guess = 1;
-    var points = 0;
+let randomNumber = Math.floor(Math.random() * 4 ) + 1;
+const guesses = document.querySelector('.guesses');
+const lastResult = document.querySelector('.lastResult');
+const lowOrHi = document.querySelector('.lowOrHi');
+const guessSubmit = document.querySelector('.guessSubmit');
+const guessField = document.querySelector('.guessField');
+let guessCount = 1;
+let resetButton;
 
-    document.getElementById("submitguess").onclick = function(){
-      
-   // number guessed by user     
-   var x = document.getElementById("guessField").value;
-  
-   if(x == y)
-   {
-       alert("top. plus punten voor jouw. dit kostte je wel "
-               + guess + " pogingen dat moet wel echt beter ");
-       points+=1;
-       console.log(points)
-       document.getElementById("points").innerHTML = points
+function checkGuess() {
+    const userGuess = Number(guessField.value);
+    if (guessCount === 1) {
+        guesses.textContent = 'Previous guesses: ';
+    }
 
-   }
-   else if(x > y)
-   {    
-       guess++;
-       alert("dat is niet goed jij mislukkeling");
-   }
-   else
-   {
-       guess++;
-       alert("dat is niet goed jij mislukkeling")
-   }
+    guesses.textContent += userGuess + ' ';
+
+    if (userGuess === randomNumber) {
+        lastResult.textContent = 'Congratulations! You got it right!';
+        lastResult.style.backgroundColor = 'green';
+        lowOrHi.textContent = '';
+        setGameOver();
+    } else if (guessCount === 10) {
+        lastResult.textContent = '!!!GAME OVER!!!';
+        lowOrHi.textContent = '';
+        setGameOver();
+    } else {
+        lastResult.textContent = 'Wrong!';
+        lastResult.style.backgroundColor = 'red';
+        if(userGuess < randomNumber) {
+            lowOrHi.textContent = 'Last guess was too low!' ;
+        } else if(userGuess > randomNumber) {
+            lowOrHi.textContent = 'Last guess was too high!';
+        }
+    }
+
+    guessCount++;
+    guessField.value = '';
+    guessField.focus();
 }
 
+guessSubmit.addEventListener('click', checkGuess);
 
+function setGameOver() {
+    guessField.disabled = true;
+    guessSubmit.disabled = true;
+    resetButton = document.createElement('button');
+    resetButton.textContent = 'Start new game';
+    document.body.appendChild(resetButton);
+    resetButton.addEventListener('click', resetGame);
+}
+
+function resetGame() {
+    guessCount = 1;
+    const resetParas = document.querySelectorAll('.resultParas p');
+    for (const resetPara of resetParas) {
+        resetPara.textContent = '';
+    }
+
+    resetButton.parentNode.removeChild(resetButton);
+    guessField.disabled = false;
+    guessSubmit.disabled = false;
+    guessField.value = '';
+    guessField.focus();
+    lastResult.style.backgroundColor = 'white';
+    randomNumber = Math.floor(Math.random() * 4) + 1;
+}
