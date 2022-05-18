@@ -20,6 +20,8 @@ function checkGuess() {
         lastResult.style.backgroundColor = 'green';
         lowOrHi.textContent = '';
         points+=1
+        document.getElementById('myImage')
+            .src="ronblij.png";
         setGameOver();
     } else if (guessCount === 10) {
         lastResult.textContent = '!!!GAME OVER!!!';
