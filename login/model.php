@@ -1,4 +1,5 @@
 <?php
+
 function inlogAction(){
 
     if(isset($_POST['name']))
@@ -53,4 +54,7 @@ function uitlogAction(){
     if(isset($_SESSION)){
         session_destroy();
     }}
+
+
+
 ?>
