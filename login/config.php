@@ -1,6 +1,7 @@
 <?php
 
 
+
 $host = 'localhost'; //Hostnaam
 $db = 'loterij'; //database naam
 $user = 'root';     //login user naam
@@ -25,10 +26,10 @@ try {                                               // Een try/catch waarin je e
      
  } 
 
-$username = $_POST["username"];
-$password = $_POST["password"];
-$mysql = "INSERT INTO user (username, password) values(:username, :password)";
-$statement = $pdo -> prepare($mysql);
-$statement -> execute([':username'=>$username, ':password'=>$password]);
+// $username = $_POST["username"];
+// $password = $_POST["password"];
+// $mysql = "INSERT INTO user (username, password) values(:username, :password)";
+// $statement = $pdo -> prepare($mysql);
+// $statement -> execute([':username'=>$username, ':password'=>$password]);
 
 ?>

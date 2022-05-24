@@ -14,8 +14,8 @@
 <a href='shop/index.php' target="blank"><div class="Winkel">winkel</div></a>
 <a href='lote/index.html' target="blank"><div class="Loterij">loterij</div></a>
 <div class="punten">punten:</div>
-    <p>
-        <a href="login/logout.php" class="btn btn-danger ml-3">log uit</a>
-    </p>
+<p>
+    <a href="login/logout.php" class="btn btn-danger ml-3">log uit</a>
+</p>
 </body>
 </html>
