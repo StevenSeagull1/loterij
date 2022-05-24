@@ -1,4 +1,5 @@
 let points = 0;
+let audio = new Audio("kansloos.mp3");
 let randomNumber = Math.floor(Math.random() * 4) + 1;
 const guesses = document.querySelector('.guesses');
 const lastResult = document.querySelector('.lastResult');

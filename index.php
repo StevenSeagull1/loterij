@@ -10,15 +10,16 @@
 </head>
 <body>
 <img src="Ronrb.png">
-<a href='login/inlogForm.php' target="blank"><div class="login">registreer/login</div></a>
-<a href='spel/index.html' target="blank"><div class="Spel">raad het getal</div></a>
-<a href='shop/index.php' target="blank"><div class="Winkel">winkel</div></a>
-<a href='lote/index.html' target="blank"><div class="Loterij">loterij</div></a>
+<a href='login/inlogForm.php' target="blank"><div class="login">registreer/login</a></div>
+<a href='spel/index.html' target="blank"><div class="Spel">raad het getal</a></div>
+<a href='shop/index.php' target="blank"><div class="Winkel">winkel</a></div>
+<a href='lote/index.html' target="blank"><div class="Loterij">loterij</a></div>
 <div class="punten">punten:</div>
 
 <p>
     <a href="login/logout.php" class="btn btn-danger ml-3">log uit</a>
 </p>
+echo "php";
 
 </body>
 </html>
