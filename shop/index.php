@@ -9,7 +9,7 @@
 </head>
 <body>
 <?php
-echo "<a href='../homepage.php'>terug naar menu</a>";
+echo "<a href='../index.php'>terug naar menu</a>";
 ?>
     <div class="doos">
         Wat kan ik voor u doen?
