@@ -8,7 +8,7 @@
 </head>
 <body>
 	<h1 class="title">LOGIN</h1>
-<form method="post" action="config.php">
+<form action="config.php" method="post" >
     	<label>Name:</label><br>
     	<input type="text" name="username" class="name"><br>
 	
