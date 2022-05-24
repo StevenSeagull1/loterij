@@ -7,6 +7,14 @@ if(isset($_GET['action'])) {
     if($_GET['action']=="login" ){
         include 'login/inlogForm.php';
     }
+
+    if($_GET['action']=="sumbit"){
+        include 'index.php';
+    }
+
+    else{
+        include 'FoutInlog.php';
+    }
 }
 
 
