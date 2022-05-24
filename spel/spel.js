@@ -31,16 +31,9 @@ function checkGuess() {
         image.src = "ronnetje.png";
         setGameOver();
     } else {
-        lastResult.textContent = 'Wrong!';
+        lastResult.textContent = 'Kansloos!';
         image.src = "ronnetje.png";
         lastResult.style.backgroundColor = 'red';
-        if(userGuess < randomNumber) {
-            image.src = "ronnetje.png";
-            lowOrHi.textContent = 'Last guess was too low!' ;
-        } else if(userGuess > randomNumber) {
-            image.src = "ronnetje.png";
-            lowOrHi.textContent = 'Last guess was too high!';
-        }
     }
 
     guessCount++;
