@@ -1,11 +1,11 @@
 <?php
-include 'model.php';
-include 'config.php';
+include 'login/model.php';
+include 'login/config.php';
 
 if(isset($_GET['action'])) {
 
     if($_GET['action']=="login" ){
-        include 'inlogForm.php';
+        include 'login/inlogForm.php';
     }
 }
 
