@@ -1,5 +1,6 @@
 let points = 0;
 let audio = new Audio("kansloos.mp3");
+let audio2 = new Audio(src="buma-dus-chapeau.mp3");
 let randomNumber = Math.floor(Math.random() * 4) + 1;
 const guesses = document.querySelector('.guesses');
 const lastResult = document.querySelector('.lastResult');
@@ -22,6 +23,7 @@ function checkGuess() {
         lastResult.style.backgroundColor = 'green';
         lowOrHi.textContent = '';
         points+=1
+        audio2.play();
         console.log(points)
         document.getElementById("punt").innerHTML = points;
         image.src = "ronblij.png";
@@ -34,6 +36,7 @@ function checkGuess() {
     } else {
         lastResult.textContent = 'Kansloos!';
         image.src = "ronnetje.png";
+        audio.play();
         lastResult.style.backgroundColor = 'red';
     }
 
