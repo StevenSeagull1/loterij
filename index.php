@@ -1,8 +1,8 @@
-<<<<<<< HEAD
+
 <?php
 include 'view/index.html'
 ?>
-=======
+
 
 <?php
 session_start();
@@ -27,4 +27,4 @@ function randomUser() {
     GLOBAL $pdo;
 
 }
->>>>>>> 3cdc023a30f18878503bb30f025b999d2845fb63
+
