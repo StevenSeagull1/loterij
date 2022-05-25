@@ -1,8 +1,7 @@
-
 <?php
+require 'model/model.php';
 include 'view/index.html';
 ?>
-
 
 <?php
 session_start();
