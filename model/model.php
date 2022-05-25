@@ -4,13 +4,13 @@ function inlogAction(){
 
     if(isset($_POST['name']))
 {
-<<<<<<<< HEAD:model/model.php
+
     require 'secure/config.php';
     $name = filter_input(INPUT_POST,'name');//$_POST['name'];
-========
+
     require 'login/config.php';
     $name = filter_input(INPUT_POST,'username');//$_POST['name'];
->>>>>>>> 3cdc023a30f18878503bb30f025b999d2845fb63:view/crudUser.php
+
     $password = filter_input(INPUT_POST,'password');//$_POST['password'];
     $hashed_password = hash('sha256',$password);
 

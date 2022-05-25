@@ -44,15 +44,15 @@ function inlogAction(){
         }
         else{
 
-            include 'login/foutInlog.php';
+            include 'view/FoutInlog.php';
             }
         }
         else{
-            include 'login/foutInlog.php';
+            include 'view/FoutInlog.php';
         }
     }
     else{
-    include 'login/inlogForm.php';
+    include 'view/inlogForm.php';
     }
 }
 
