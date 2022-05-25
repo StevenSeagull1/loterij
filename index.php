@@ -27,3 +27,4 @@ function randomUser() {
     GLOBAL $pdo;
 
 }
+?>
