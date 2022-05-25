@@ -21,7 +21,7 @@ try {                                               // Een try/catch waarin je e
 
  catch (\PDOException $e) {
 
-      throw new \PDOException($e->getMessage(), (int)$e->getCode());
+    throw new \PDOException($e->getMessage(), (int)$e->getCode());
      
  } 
 
