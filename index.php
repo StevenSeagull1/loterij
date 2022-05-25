@@ -7,7 +7,7 @@ include 'view/index.html'
 <?php
 session_start();
 
-require 'login/crudUser.php';
+require 'view/crudUser.php';
 if(!isset($_SESSION['rechten'])){
     inlogAction();
 }
