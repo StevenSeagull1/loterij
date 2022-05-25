@@ -1,6 +1,8 @@
+
 <?php
 include 'view/index.html'
 ?>
+
 
 <?php
 session_start();
