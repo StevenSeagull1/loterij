@@ -1,7 +1,5 @@
 <?php
 
-
-
 $host = 'localhost'; //Hostnaam
 $db = 'loterij'; //database naam
 $user = 'root';     //login user naam
@@ -22,6 +20,7 @@ try {                                               // Een try/catch waarin je e
 }
 
  catch (\PDOException $e) {
+
       throw new \PDOException($e->getMessage(), (int)$e->getCode());
      
  } 
