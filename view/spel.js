@@ -26,16 +26,16 @@ function checkGuess() {
         audio2.play();
         console.log(points)
         document.getElementById("punt").innerHTML = points;
-        image.src = "ronblij.png";
+        image.src = "images/ronblij.png";
         setGameOver();
     } else if (guessCount === 10) {
         lastResult.textContent = 'wat ben jij waardeloos';
         lowOrHi.textContent = '';
-        image.src = "ronnetje.png";
+        image.src = "images/ronnetje.png";
         setGameOver();
     } else {
         lastResult.textContent = 'Kansloos!';
-        image.src = "ronnetje.png";
+        image.src = "images/ronnetje.png";
         audio.play();
         lastResult.style.backgroundColor = 'red';
     }
@@ -61,7 +61,7 @@ function resetGame() {
     const resetParas = document.querySelectorAll('.resultParas p');
     for (const resetPara of resetParas) {
         resetPara.textContent = '';
-        image.src = "ronnetje.png";
+        image.src = "images/ronnetje.png";
     }
 
     resetButton.parentNode.removeChild(resetButton);
