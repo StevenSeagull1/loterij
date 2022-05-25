@@ -16,3 +16,9 @@ else{
     }
 }
 
+
+
+function randomUser() {
+    GLOBAL $pdo;
+
+}
