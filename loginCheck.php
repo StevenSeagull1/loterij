@@ -4,6 +4,7 @@ require_once('secure/config.php');
 include 'index.php';
 
 
+
 if(isset($_GET['action'])) {
 
     if($_GET['action']=="login" ){
@@ -22,8 +23,8 @@ if(isset($_GET['action'])) {
 }
 
 
-
 echo '<a href="?action=login">Login</a>';
+
 
 
 

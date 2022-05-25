@@ -8,7 +8,7 @@ function inlogAction(){
     require 'secure/config.php';
     $name = filter_input(INPUT_POST,'name');//$_POST['name'];
 
-    require 'login/config.php';
+    require 'view/config.php';
     $name = filter_input(INPUT_POST,'username');//$_POST['name'];
 
     $password = filter_input(INPUT_POST,'password');//$_POST['password'];

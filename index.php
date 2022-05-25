@@ -1,6 +1,8 @@
 
 <?php
-include 'view/index.html'
+include 'view/index.html';
+
+
 ?>
 
 
