@@ -1,5 +1,7 @@
 <?php
 
+echo '<a href="?action=fun">Login</a>'; 
+echo '<a href="?action=fun">loterij</a>';
 ?>
 
 <!DOCTYPE html>
@@ -14,7 +16,7 @@
 </head>
 <body>
 <a href='view/inlogForm.php' target="blank"><div class="login">registreer/login</div></a>
-<a href='spel/index.html' target="blank"><div class="Spel">raad het getal</div></a>
+<a href='view/spel.html' target="blank"><div class="Spel">raad het getal</div></a>
 <a href='shop/index.php' target="blank"><div class="Winkel">winkel</div></a>
 <a href='lote/index.html' target="blank"><div class="Loterij">loterij</div></a>
 <div class="punten">punten:</div>
