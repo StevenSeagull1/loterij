@@ -1,7 +1,11 @@
 let points = 0;
+<<<<<<< Updated upstream
 let audio = new Audio("kansloos.mp3");
 let audio2 = new Audio(src="buma-dus-chapeau.mp3");
 let randomNumber = Math.floor(Math.random() * 4) + 1;
+=======
+let randomNumber = Math.floor(Math.random() * 20) + 1;
+>>>>>>> Stashed changes
 const guesses = document.querySelector('.guesses');
 const lastResult = document.querySelector('.lastResult');
 const lowOrHi = document.querySelector('.lowOrHi');
@@ -70,6 +74,6 @@ function resetGame() {
     guessField.value = '';
     guessField.focus();
     lastResult.style.backgroundColor = 'white';
-    randomNumber = Math.floor(Math.random() * 4) + 1;
+    randomNumber = Math.floor(Math.random() * 20) + 1;
 }
 

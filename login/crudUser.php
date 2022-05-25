@@ -5,12 +5,14 @@ function inlogAction(){
     if(isset($_POST['name']))
 {
     require 'login/config.php';
-    $name = filter_input(INPUT_POST,'name');//$_POST['name'];
+    $name = filter_input(INPUT_POST,'username');//$_POST['name'];
     $password = filter_input(INPUT_POST,'password');//$_POST['password'];
     $hashed_password = hash('sha256',$password);
+
     $sql = 'SELECT username, password,role FROM user
     WHERE username = :name';
     $statement = $pdo->prepare($sql);
+
     $statement->bindParam(':name',$name);
     $statement->execute();
     $user = $statement->fetch(PDO::FETCH_ASSOC);
@@ -37,24 +39,30 @@ function inlogAction(){
         }
         else{
 
-            include 'templates/foutInlog.php';
+            include 'login/foutInlog.php';
             }
         }
         else{
-            include 'templates/foutInlog.php';
+            include 'login/foutInlog.php';
         }
     }
     else{
-    include 'templates/inlogForm.php';
+    include 'login/inlogForm.php';
     }
 }
+
 
 function uitlogAction(){
     session_unset();
     if(isset($_SESSION)){
         session_destroy();
+<<<<<<< Updated upstream:login/model.php
     }}
 function randomnaam(){
+=======
+    }
+}
+>>>>>>> Stashed changes:login/crudUser.php
 
 }
 
