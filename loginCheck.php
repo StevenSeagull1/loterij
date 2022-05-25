@@ -1,6 +1,6 @@
 <?php
-include 'login/model.php';
-require_once('login/config.php');
+include 'model/model.php';
+require_once('secure/config.php');
 include 'index.php';
 
 
@@ -8,7 +8,7 @@ if(isset($_GET['action'])) {
 
     if($_GET['action']=="login" ){
 
-        include 'login/inlogForm.php';
+        include 'view/inlogForm.php';
 
 
         if($_GET['action']=="sumbit"){
@@ -16,7 +16,7 @@ if(isset($_GET['action'])) {
         }
 
         else{
-            include 'FoutInlog.php';
+            include 'view/FoutInlog.php';
         }
 }
 }
