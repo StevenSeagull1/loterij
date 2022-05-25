@@ -56,15 +56,8 @@ function uitlogAction(){
     session_unset();
     if(isset($_SESSION)){
         session_destroy();
-<<<<<<< Updated upstream:login/model.php
+
+
     }}
-function randomnaam(){
-=======
-    }
-}
->>>>>>> Stashed changes:login/crudUser.php
-
-}
-
-
+    
 ?>
