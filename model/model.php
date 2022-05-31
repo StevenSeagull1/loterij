@@ -8,9 +8,6 @@ function inlogAction(){
         require 'secure/config.php';
         $name = filter_input(INPUT_POST,'username');//$_POST['name'];
 
-        require 'secure/config.php';
-        $name = filter_input(INPUT_POST,'username');//$_POST['name'];
-
         $password = filter_input(INPUT_POST,'password');//$_POST['password'];
         $hashed_password = hash('sha256',$password);
 

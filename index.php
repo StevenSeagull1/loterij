@@ -23,7 +23,7 @@ session_start();
             break;
         default:
             include 'view/index.html';
-            // include('view/homepage.php');
+
     }
 // }
 
