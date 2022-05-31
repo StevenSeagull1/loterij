@@ -2,7 +2,7 @@
 
 
 require 'model/model.php';
-include 'view/index.html';
+include 'view/homepage.php';
 
 ?>
 
