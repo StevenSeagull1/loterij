@@ -52,7 +52,7 @@ function inlogAction(){
         }
     }
     else{
-    include 'login/inlogForm.php';
+    include 'view/inlogForm.php';
     }
 }
 

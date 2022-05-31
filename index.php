@@ -9,19 +9,20 @@ include 'view/index.html';
 <?php
 session_start();
 
-require 'view/crudUser.php';
-if(!isset($_SESSION['rechten'])){
-    inlogAction();
-}
-else{
+
+// if(!isset($_SESSION['rechten'])){
+//     inlogAction();
+// }
+// else{
     $function = filter_input(INPUT_GET, 'fun');
 
     switch($function){
-        case 1: inlogAction();
+        case "inloggen": inlogAction();
         break;
         default:
+            // include('view/homepage.php');
     }
-}
+// }
 
 
 ?>
