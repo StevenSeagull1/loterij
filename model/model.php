@@ -3,56 +3,57 @@
 function inlogAction(){
 
     if(isset($_POST['username']))
-{
-
-    require 'secure/config.php';
-    $name = filter_input(INPUT_POST,'username');//$_POST['name'];
-
-    require 'login/config.php';
-    $name = filter_input(INPUT_POST,'username');//$_POST['name'];
-
-    $password = filter_input(INPUT_POST,'password');//$_POST['password'];
-    $hashed_password = hash('sha256',$password);
-
-    $sql = 'SELECT username, password,role FROM user
-    WHERE username = :name';
-    $statement = $conn->prepare($sql);
-
-    $statement->bindParam(':name',$name);
-    $statement->execute();
-    $user = $statement->fetch(PDO::FETCH_ASSOC);
-    if(is_array($user))
     {
 
-        if($user['password']==$hashed_password)
-        {
-            $_SESSION['username']=$name;
-            $_SESSION['rechten']=$user['role'];
-            switch($_SESSION['rechten'])
-            {
-                case 'admin':
-                    include 'view/admin.php';
-                    break;
-                case 'klant':
-                    include 'templates/rol2.php';
-                    break;
-                // case 'rol3':
-                //     include 'templates/rol3.php';
-                //     break;
-                default: break;
-            }
-        }
-        else{
+        require 'secure/config.php';
+        $name = filter_input(INPUT_POST,'username');//$_POST['name'];
 
-            include 'view/FoutInlog.php';
+        require 'secure/config.php';
+        $name = filter_input(INPUT_POST,'username');//$_POST['name'];
+
+        $password = filter_input(INPUT_POST,'password');//$_POST['password'];
+        $hashed_password = hash('sha256',$password);
+
+        $sql = 'SELECT username, password,role FROM user
+        WHERE username = :name';
+        $statement = $pdo->prepare($sql);
+
+        $statement->bindParam(':name',$name);
+        $statement->execute();
+        $user = $statement->fetch(PDO::FETCH_ASSOC);
+        if(is_array($user))
+        {
+
+            if($user['password']==$hashed_password)
+            {
+                $_SESSION['username']=$name;
+                $_SESSION['rechten']=$user['role'];
+                switch($_SESSION['rechten'])
+                {
+                    case 'admin':
+                        include 'view/admin.php';
+                        break;
+                    case 'klant':
+                        include 'templates/rol2.php';
+                        break;
+                    // case 'rol3':
+                    //     include 'templates/rol3.php';
+                    //     break;
+                    default: break;
+                }
+            }
+            else{
+
+                include 'view/FoutInlog.php';
+                }
+            }
+            else{
+                include 'view/FoutInlog.php';
             }
         }
-        else{
-            include 'view/FoutInlog.php';
-        }
-    }
-    else{
-    include 'view/inlogForm.php';
+    else
+    {
+        include 'view/inlogForm.php';
     }
 }
 
