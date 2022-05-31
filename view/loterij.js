@@ -1,12 +1,7 @@
 setInterval( function() {
-    let currentDate = new Date()
-    let day = currentDate.getDate() + 1; 
-    let month = currentDate.getMonth() + 1;
+
     // First, set the time and date you want to countdown to
-    let e = new Date();
-    thisYear = e.getFullYear(); // Get this year
-    let countingDownTo = new Date(`${month} ${day} ${thisYear} 00:00:00`);
-    console.log('countingdownto => ',countingDownTo);
+    let countingDownTo = new Date("may 25, 2022 00:00:00");
 
     // Get today's time and date
     let now = new Date();
@@ -67,13 +62,13 @@ setInterval( function() {
         </tr>
     </table>
     `
-    }, 1000);
+}, 1000);
 
 
 function formatNumber(inputNumber) {
-let outputNumber = inputNumber.toLocaleString('en-US', {
-    minimumIntegerDigits: 2,
-    useGrouping: false
+    let outputNumber = inputNumber.toLocaleString('en-US', {
+        minimumIntegerDigits: 2,
+        useGrouping: false
     })
-return outputNumber;
+    return outputNumber;
 }
