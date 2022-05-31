@@ -1,6 +1,6 @@
 <?php
 echo '<a href="?fun=inloggen">Login</a>'; 
-echo '<a href="?fun=loterij">loterij</a>';
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -14,7 +14,7 @@ echo '<a href="?fun=loterij">loterij</a>';
 </head>
 <body>
 <img src="view/images/Ronrb.png">
-<a href='view/inlogForm.php' target="blank"><div class="login">registreer/login</a></div>
+<a href="?fun=inloggen" target="blank"><div class="login">registreer/login</a></div>
 <a href='view/spel.html' target="blank"><div class="Spel">raad het getal</a></div>
 <div class="Winkel"></div>
 <a href='view/loterij.html' target="blank"><div class="Loterij">loterij</a></div>
