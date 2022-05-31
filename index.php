@@ -2,7 +2,8 @@
 
 
 require 'model/model.php';
-include 'view/homepage.php';
+include 'view/header.php';
+include 'view/menubalk.php';
 
 ?>
 
@@ -14,12 +15,14 @@ session_start();
 //     inlogAction();
 // }
 // else{
-    $function = filter_input(INPUT_GET, 'fun');
+    $function = filter_input(INPUT_GET, 'action');
 
     switch($function){
-        case "inloggen": inlogAction();
-        break;
+        case "login": 
+            inlogAction();
+            break;
         default:
+            include 'view/index.html';
             // include('view/homepage.php');
     }
 // }
