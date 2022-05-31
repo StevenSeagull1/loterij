@@ -17,7 +17,6 @@ function checkGuess() {
     }
 
     guesses.textContent += userGuess + ' ';
-
     if (userGuess === randomNumber) {
         lastResult.textContent = 'Geweldig! ik ben trots op je.';
         lastResult.style.backgroundColor = 'green';
