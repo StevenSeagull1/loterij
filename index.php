@@ -25,6 +25,15 @@ session_start();
             include 'view/index.html';
 
     }
+
+    switch($function){
+        case "loterij": 
+            loterijAction();
+            break;
+        default:
+            include 'view/index.html';
+
+    }
 // }
 
 
