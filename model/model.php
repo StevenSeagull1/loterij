@@ -1,12 +1,5 @@
 <?php
 
-function spelAction(){
-    include 'view/spel.php';
-}
-
-function loterijAction(){
-    include 'view/loterij.php';
-}
 
 function inlogAction(){
 
@@ -72,7 +65,7 @@ function uitlogAction(){
 
 function spelAction(){
     if(isset($_SESSION)){
-        include 'view/spel.html';
+        include 'view/spel.php';
     }
     else{
         echo 'Pagina niet gevonden.';
@@ -81,7 +74,7 @@ function spelAction(){
 
 function loterijAction() {
     if(isset($_SESSION)){
-        include 'view/loterij.html';
+        include 'view/loterij.php';
     }
     else{
         echo 'Pagina niet gevonden';
