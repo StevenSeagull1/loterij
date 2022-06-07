@@ -31,7 +31,7 @@ function inlogAction(){
                         include 'view/admin.php';
                         break;
                     case 'klant':
-                        include 'templates/rol2.php';
+                        include 'view/klant.php';
                         break;
                     // case 'rol3':
                     //     include 'templates/rol3.php';
@@ -61,5 +61,26 @@ function uitlogAction(){
         session_destroy();
 
     }}
+
+function spelAction(){
+    if(isset($_SESSION)){
+        include 'view/spel.html';
+    }
+    else{
+        echo 'Pagina niet gevonden.';
+    }
+}
+
+function loterijAction() {
+    if(isset($_SESSION)){
+        include 'view/loterij.html';
+    }
+    else{
+        echo 'Pagina niet gevonden';
+    }
+
+}
+
+
 
 ?>

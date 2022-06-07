@@ -21,11 +21,19 @@ session_start();
         case "login": 
             inlogAction();
             break;
-        default:
-            include 'view/index.html';
+        case "loterij":
+            loterijAction();
+            break;
+        case "spel":
+            spelAction();
+            break;
+        case "uitloggen":
+            uitlogAction();
+            break;
+            default:
 
     }
-// }
+//}
 
 
 ?>
