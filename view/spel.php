@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <title>pauper spel</title>
     <script src="spel.js"defer></script>
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="spel.css">
 </head>
   
@@ -25,7 +24,18 @@
     <p class="lastResult"></p>
     <p class="lowOrHi"></p>
 </div>
+<<<<<<< HEAD
 <img src="images/ronnetje.png" id="ron" alt="foto van ron boszhard verwerkt in akinator lichaam">
+<p>loten:</p><div id="punt"></div>
+<?php
+foreach($_COOKIE as $key=>$value)
+{
+    echo "value: ".$value.'<br />';
+};
+?>
+=======
+<img src="view/images/ronnetje.png" id="ron" alt="foto van ron boszhard verwerkt in akinator lichaam">
 <p>punten:</p><div id="punt"></div>
+>>>>>>> 7e29ca6dbf53e7d77772e698ca1831589fec928e
 </body>
 </html>

@@ -1,5 +1,13 @@
 <?php
 
+function spelAction(){
+    include 'view/spel.php';
+}
+
+function loterijAction(){
+    include 'view/loterij.php';
+}
+
 function inlogAction(){
 
     if(isset($_POST['username']))

@@ -33,7 +33,21 @@ session_start();
             default:
 
     }
+<<<<<<< HEAD
 //}
+=======
+
+    switch($function){
+        case "loterij": 
+            loterijAction();
+    }
+
+    switch($function){
+        case "spel": 
+            spelAction();
+    }
+// }
+>>>>>>> 137fa85263d164a7952ce6ad4d33443b1d0794c3
 
 
 ?>
