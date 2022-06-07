@@ -36,16 +36,6 @@ session_start();
 
 //}
 
-
-    // switch($function){
-    //     case "loterij": 
-    //         loterijAction();
-    // }
-
-    // switch($function){
-    //     case "spel": 
-    //         spelAction();
-    // }
 // }
 
 
