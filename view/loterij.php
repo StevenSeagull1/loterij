@@ -2,7 +2,7 @@
 <!-- <a href='../index.php'>terug naar menu</a> -->
 
     <div id="countdown"></div>
-    <img src="images/ron.png" alt="foto van ron boszhard die presenteert">
+    <img src="view/images/ron.png" alt="foto van ron boszhard die presenteert">
 <embed src="kahoot-lobby-music.mp3" autostart="true" loop="true"
        width="2" height="0">
 </embed>

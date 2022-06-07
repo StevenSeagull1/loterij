@@ -25,6 +25,16 @@ session_start();
             include 'view/index.html';
 
     }
+
+    switch($function){
+        case "loterij": 
+            loterijAction();
+    }
+
+    switch($function){
+        case "spel": 
+            spelAction();
+    }
 // }
 
 
