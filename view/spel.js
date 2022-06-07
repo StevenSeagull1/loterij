@@ -71,8 +71,8 @@ function resetGame() {
     lastResult.style.backgroundColor = 'white';
     randomNumber = Math.floor(Math.random() * 4) + 1;
 }
-function maakkoekje() {
-    document.cookie = points
-}
+document.cookie = points
+console.log(document.cookie)
+
 
 
