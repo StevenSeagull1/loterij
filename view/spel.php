@@ -34,7 +34,7 @@ foreach($_COOKIE as $key=>$value)
 };
 ?>
 
-<img src="view/images/ronnetje.png" id="ron" alt="foto van ron boszhard verwerkt in akinator lichaam">
+<img src="view/images/ronnetje.png" id="ron">
 <p>punten:</p><div id="punt"></div>
 
 </body>
