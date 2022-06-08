@@ -84,7 +84,7 @@ function loterijAction() {
 }
 
 function punten() {
-    
+
 }
 
 
