@@ -1,6 +1,6 @@
 let points = 0;
-let audio = new Audio("kansloos.mp3");
-let audio2 = new Audio(src="buma-dus-chapeau.mp3");
+let audio = new Audio("view/kansloos.mp3");
+let audio2 = new Audio(src="view/buma-dus-chapeau.mp3");
 let randomNumber = Math.floor(Math.random() * 4) + 1;
 const guesses = document.querySelector('.guesses');
 const lastResult = document.querySelector('.lastResult');
@@ -25,16 +25,16 @@ function checkGuess() {
         audio2.play();
         console.log(points)
         document.getElementById("punt").innerHTML = points;
-        image.src = "images/ronblij.png";
+        image.src = "view/images/ronblij.png";
         setGameOver();
     } else if (guessCount === 10) {
         lastResult.textContent = 'wat ben jij waardeloos';
         lowOrHi.textContent = '';
-        image.src = "images/ronnetje.png";
+        image.src = "view/images/ronnetje.png";
         setGameOver();
     } else {
         lastResult.textContent = 'Kansloos!';
-        image.src = "images/ronnetje.png";
+        image.src = "view/images/ronnetje.png";
         audio.play();
         lastResult.style.backgroundColor = 'red';
     }
@@ -60,7 +60,7 @@ function resetGame() {
     const resetParas = document.querySelectorAll('.resultParas p');
     for (const resetPara of resetParas) {
         resetPara.textContent = '';
-        image.src = "images/ronnetje.png";
+        image.src = "view/images/ronnetje.png";
     }
 
     resetButton.parentNode.removeChild(resetButton);

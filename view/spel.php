@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8">
     <title>pauper spel</title>
-    <script src="spel.js"defer></script>
-    <link rel="stylesheet" href="spel.css">
+    <script src="view/spel.js"defer></script>
+    <link rel="stylesheet" href="view/spel.css">
 </head>
   
 <body>
@@ -24,8 +24,13 @@
     <p class="lastResult"></p>
     <p class="lowOrHi"></p>
 </div>
+<<<<<<< Updated upstream
 
 <img src="images/ronnetje.png" id="ron" alt="foto van ron boszhard verwerkt in akinator lichaam">
+=======
+<<<<<<< HEAD
+<img src="view/images/ronnetje.png" id="ron" alt="foto van ron boszhard verwerkt in akinator lichaam">
+>>>>>>> Stashed changes
 <p>loten:</p><div id="punt"></div>
 <?php
 foreach($_COOKIE as $key=>$value)
@@ -33,8 +38,12 @@ foreach($_COOKIE as $key=>$value)
     echo "value: ".$value.'<br />';
 };
 ?>
+<<<<<<< Updated upstream
 
 <img src="view/images/ronnetje.png" id="ron">
+=======
+=======
+>>>>>>> Stashed changes
 <p>punten:</p><div id="punt"></div>
 
 </body>
