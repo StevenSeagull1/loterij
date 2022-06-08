@@ -33,7 +33,6 @@
 
 <img src="view/images/ronnetje.png" id="ron">
 
-<p>punten:</p><div id="punt"></div>
 
 </body>
 </html>
