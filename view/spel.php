@@ -8,7 +8,6 @@
 </head>
   
 <body>
-<a href='../index.php'>terug naar menu</a>
 
 <h1>Raad het getal spel</h1>
 
