@@ -13,7 +13,6 @@ let image = document.getElementById('ron');
 function checkGuess() {
     const userGuess = Number(guessField.value);
     if (guessCount === 1) {
-        guesses.textContent = 'Previous guesses: ';
     }
 
     guesses.textContent += userGuess + ' ';
@@ -50,7 +49,7 @@ function setGameOver() {
     guessField.disabled = true;
     guessSubmit.disabled = true;
     resetButton = document.createElement('button');
-    resetButton.textContent = 'Start new game';
+    resetButton.textContent = 'Begin nieuw spel';
     document.body.appendChild(resetButton);
     resetButton.addEventListener('click', resetGame);
 }
