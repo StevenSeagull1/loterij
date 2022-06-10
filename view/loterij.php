@@ -10,7 +10,7 @@
 
     <div id="countdown"></div>
     <img src="view/images/ron.png" alt="foto van ron boszhard die presenteert" id="ronpres">
-<embed src="kahoot-lobby-music.mp3" autostart="true" loop="true"
+<embed src="view/kahoot-lobby-music.mp3" autostart="true" loop="true"
        width="2" height="0">
 </embed>
 </body>
