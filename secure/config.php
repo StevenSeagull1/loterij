@@ -2,7 +2,7 @@
 
 
 $host = 'localhost'; //Hostnaam
-$db = 'loterij'; //database naam
+$db = 'loterij1'; //database naam
 $user = 'root';     //login user naam
 $pass = '';    //login wachtwoord
 $charset = 'utf8mb4';   //character set, voor deze opdracht utf8mb4
