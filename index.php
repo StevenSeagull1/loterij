@@ -41,7 +41,7 @@ require 'model/model.php';
                 uitlogAction();
             } 
             else{
-                echo 'werkt niet';
+                echo 'Werkt niet.';
             }
 
             break;

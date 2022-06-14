@@ -83,4 +83,14 @@ function loterijAction() {
 
 }
 
+// function randomUser(){
+//     $mySql = query('SELECT username
+//     FROM user
+//     WHERE role = "klant"
+//     ORDER BY RAND()
+//     LIMIT 1')
+//     $statement = prepare($mySql);
+//     $statement->execute();
+// }
+
 ?>
