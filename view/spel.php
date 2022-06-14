@@ -3,12 +3,11 @@
 <head>
     <meta charset="utf-8">
     <title>pauper spel</title>
-    <script src="spel.js"defer></script>
-    <link rel="stylesheet" href="spel.css">
+    <script src="view/spel.js"defer></script>
+    <link rel="stylesheet" href="view/spel.css">
 </head>
   
 <body>
-<a href='../index.php'>terug naar menu</a>
 
 <h1>Raad het getal spel</h1>
 
@@ -25,17 +24,14 @@
     <p class="lowOrHi"></p>
 </div>
 
-<img src="images/ronnetje.png" id="ron" alt="foto van ron boszhard verwerkt in akinator lichaam">
 <p>loten:</p><div id="punt"></div>
 <?php
-foreach($_COOKIE as $key=>$value)
-{
-    echo "value: ".$value.'<br />';
-};
+
 ?>
 
-<img src="view/images/ronnetje.png" id="ron" alt="foto van ron boszhard verwerkt in akinator lichaam">
-<p>punten:</p><div id="punt"></div>
+
+<img src="view/images/ronnetje.png" id="ron">
+
 
 </body>
 </html>

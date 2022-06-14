@@ -1,6 +1,7 @@
 <?php
 
 
+
 function inlogAction(){
 
     if(isset($_POST['username']))
@@ -82,6 +83,7 @@ function loterijAction() {
 
 }
 
+<<<<<<< HEAD
 function randomUser() {
     require 'secure/config.php';
     GLOBAL $pdo;
@@ -97,6 +99,12 @@ function randomUser() {
 
 
 }
+=======
+function punten() {
+
+}
+
+>>>>>>> 6e78a94a421a22e63f6d503e39e07340caa0e2e9
 
 
 ?>

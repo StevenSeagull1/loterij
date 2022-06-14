@@ -1,9 +1,16 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="view/loterij.css">
+</head>
+
 <body>
 <!-- <a href='../index.php'>terug naar menu</a> -->
 
     <div id="countdown"></div>
-    <img src="view/images/ron.png" alt="foto van ron boszhard die presenteert">
-<embed src="kahoot-lobby-music.mp3" autostart="true" loop="true"
+    <img src="view/images/ron.png" alt="foto van ron boszhard die presenteert" id="ronpres">
+<embed src="view/kahoot-lobby-music.mp3" autostart="true" loop="true"
        width="2" height="0">
 </embed>
 </body>
