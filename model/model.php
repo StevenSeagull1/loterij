@@ -1,6 +1,16 @@
 <?php
 
+function chooseName(){
+    require 'secure/config.php';
+    $stmt = $pdo->query('SELECT username FROM user WHERE role = "klant" ORDER BY RAND() LIMIT 1');
+    $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    return $result;
 
+    while($row = mysql_fetch_array($result)) {
+        echo $row['username']; // Print a single column data
+        echo print_r($row);       // Print the entire row data
+    }
+}
 
 function inlogAction(){
 

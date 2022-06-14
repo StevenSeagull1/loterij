@@ -3,11 +3,17 @@
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="view/loterij.css">
-</head>
+    <script src="view/loterij.js"></script>
+</head>;
 
+<?php
+require_once "model/model.php";
+// print_r (chooseName());
+?>
 <body>
 <!-- <a href='../index.php'>terug naar menu</a> -->
-
+    <button onclick=<?php chooseName()?>>random</button>
+    <!-- <h1 id="randoOutput"></h1> -->
     <div id="countdown"></div>
     <img src="view/images/ron.png" alt="foto van ron boszhard die presenteert" id="ronpres">
 <embed src="view/kahoot-lobby-music.mp3" autostart="true" loop="true"

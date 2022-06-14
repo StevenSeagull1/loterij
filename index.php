@@ -38,8 +38,11 @@ session_start();
         case "uitloggen":
             uitlogAction();
             break;
+        
+        case "winnaar":
+            chooseName();
+            break;
             default:
-
     }
 
 
