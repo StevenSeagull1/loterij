@@ -6,6 +6,7 @@ require 'model/model.php';
 
 
 
+
 ?>
 
 <a href="?action=randomuser">We are rohit</a>
@@ -24,6 +25,9 @@ require 'model/model.php';
     switch($function){
         case "login": 
             inlogAction();
+            if(isset($_SESSION['username'])){
+                include 'view/naInlog.php';
+            }
             break;
         case "loterij":
             loterijAction();
@@ -46,7 +50,6 @@ require 'model/model.php';
 
             break;
             default:
-
     }
 
 
@@ -55,7 +58,8 @@ require 'model/model.php';
 //}
 
 // }
+
+
 include 'view/header.php';
 include 'view/menubalk.php';
-
 ?>
