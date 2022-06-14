@@ -1,16 +1,17 @@
 <?php
+session_start();
 
 
 require 'model/model.php';
-include 'view/header.php';
-include 'view/menubalk.php';
+
+
 
 ?>
 
 <a href="?action=randomuser">We are rohit</a>
 
 <?php
-session_start();
+
 
 
 // if(!isset($_SESSION['rechten'])){
@@ -35,8 +36,14 @@ session_start();
             randomUser();
             break;
 
-        case "uitloggen":
-            uitlogAction();
+        case "logout":
+            if(isset($_SESSION['username'])){
+                uitlogAction();
+            } 
+            else{
+                echo 'werkt niet';
+            }
+
             break;
             default:
 
@@ -48,7 +55,7 @@ session_start();
 //}
 
 // }
-
-
+include 'view/header.php';
+include 'view/menubalk.php';
 
 ?>

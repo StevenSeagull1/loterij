@@ -17,4 +17,3 @@
         echo '<a href="?action=login" target="blank"><div class="Spel">registreer/login</div></a>';
     }
 ?>
-<a href="?action=uitloggen"><button>uitloggen</button></a>
