@@ -82,6 +82,21 @@ function loterijAction() {
 
 }
 
+function randomUser() {
+    require 'secure/config.php';
+    GLOBAL $pdo;
+
+    $sql = 'SELECT username
+    FROM user
+    WHERE role = "klant"
+    ORDER BY RAND()
+    LIMIT 1';
+    return $sql;
+    $statement = $pdo->prepare($sql);
+    $statement->execute();
+
+
+}
 
 
 ?>
