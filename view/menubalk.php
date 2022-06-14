@@ -3,9 +3,6 @@
 
 <img id="ronnie" src="view/images/Ronrb.png">
 
-<a href='?action=spel' target="blank"><div class="Spel">raad het getal</div></a>
-<a href='?action=loterij' target="blank"><div class="Loterij">loterij</div></a>
-<!-- <a href='?action=winnaar' target="blank"><div>Winnaar</div></a> -->
 
 
 
@@ -18,4 +15,3 @@
         echo '<a href="?action=login" target="blank"><div class="Spel">registreer/login</div></a>';
     }
 ?>
-<a href="?action=uitloggen"><button>uitloggen</button></a>
