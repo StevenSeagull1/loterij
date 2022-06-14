@@ -12,7 +12,7 @@ require_once "model/model.php";
 ?>
 <body>
 <!-- <a href='../index.php'>terug naar menu</a> -->
-    <button onclick=<?php chooseName()?>>random</button>
+    <button onclick=<?php ?>>random</button>
     <!-- <h1 id="randoOutput"></h1> -->
     <div id="countdown"></div>
     <img src="view/images/ron.png" alt="foto van ron boszhard die presenteert" id="ronpres">
