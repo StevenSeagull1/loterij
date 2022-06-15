@@ -5,6 +5,7 @@ function chooseName(){
     $stmt = $pdo->query('SELECT username FROM user WHERE role = "klant" ORDER BY RAND() LIMIT 1');
     $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
     return $result;
+    echo chooseName();
 
     while($row = mysql_fetch_array($result)) {
         echo $row['username']; // Print a single column data

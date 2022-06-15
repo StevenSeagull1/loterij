@@ -2,5 +2,5 @@
 
 
 
-echo"404";
+echo"verkeerd wachtwoord of gebruikersnaam";
 ?>
