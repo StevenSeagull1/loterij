@@ -1,7 +1,7 @@
 let points = 0;
 let audio = new Audio("view/kansloos.mp3");
 let audio2 = new Audio(src="view/buma-dus-chapeau.mp3");
-let randomNumber = Math.floor(Math.random() * 4) + 1;
+let randomNumber = Math.floor(Math.random() * 20) + 1;
 const guesses = document.querySelector('.guesses');
 const lastResult = document.querySelector('.lastResult');
 const lowOrHi = document.querySelector('.lowOrHi');
