@@ -20,7 +20,11 @@ body {
 } */
 
 #ron {
+<<<<<<< Updated upstream
     margin-top: -300px;
+=======
+    margin-top: -400px;
+>>>>>>> Stashed changes
     margin-left: -290px;
     height: 400px;
     width: 340px;

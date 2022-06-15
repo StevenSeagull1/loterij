@@ -104,4 +104,3 @@ function loterijAction() {
 //     $statement->execute();
 // }
 
-?>

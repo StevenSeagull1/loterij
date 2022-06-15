@@ -9,7 +9,6 @@ require 'model/model.php';
 
 ?>
 
-<a href="?action=randomuser">We are rohit</a>
 
 <?php
 
